@@ -17,18 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIw-I9-UQY">
-                                <rect key="frame" x="120" y="69" width="360" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVa-N8-cVc">
+                                <rect key="frame" x="120" y="40" width="360" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="6YU-Xf-4nU"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVa-N8-cVc">
-                                <rect key="frame" x="120" y="40" width="99" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="99" id="Tc1-AO-Wlo"/>
-                                    <constraint firstAttribute="height" constant="21" id="aKf-2b-c2J"/>
+                                    <constraint firstAttribute="height" constant="21" id="aUa-mH-p6X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,16 +29,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dVa-N8-cVc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="CRW-mW-WO1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GIw-I9-UQY" secondAttribute="trailing" constant="100" id="KcC-ST-Kib"/>
-                            <constraint firstItem="GIw-I9-UQY" firstAttribute="leading" secondItem="dVa-N8-cVc" secondAttribute="leading" id="Sqh-9G-W30"/>
-                            <constraint firstItem="GIw-I9-UQY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="Ti1-yw-ouN"/>
-                            <constraint firstItem="GIw-I9-UQY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="svq-EN-XVV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dVa-N8-cVc" secondAttribute="trailing" constant="100" id="7Yo-C0-QrJ"/>
+                            <constraint firstItem="dVa-N8-cVc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="E9T-do-KTb"/>
+                            <constraint firstItem="dVa-N8-cVc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="qpn-zX-x7Z"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="forceLab" destination="dVa-N8-cVc" id="RTY-0j-t2t"/>
-                        <outlet property="touchView" destination="GIw-I9-UQY" id="SOi-r6-fYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
