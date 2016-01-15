@@ -16,8 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UIApplicationShortcutIcon *itemIcon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeFavorite];
     UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"Item1" localizedTitle:@"Orange"];
-    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc] initWithType:@"Item1" localizedTitle:@"Purple"];
+    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc] initWithType:@"Item1" localizedTitle:@"Purple" localizedSubtitle:@"NormalPurple" icon:itemIcon userInfo:nil];
     [[UIApplication sharedApplication] setShortcutItems:@[item1,item2]];
     return YES;
 }

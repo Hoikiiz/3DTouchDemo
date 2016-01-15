@@ -44,11 +44,12 @@
 }
 -(NSArray<id<UIPreviewActionItem>> *)previewActionItems
 {
-    
     UIPreviewAction * action1 = [UIPreviewAction actionWithTitle:@"1" style:1 handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+
     }];
     
     UIPreviewAction * action2 = [UIPreviewAction actionWithTitle:@"2" style:0 handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+
     }];
     UIPreviewAction * action3 = [UIPreviewAction actionWithTitle:@"3" style:2 handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
         
@@ -58,6 +59,8 @@
     
     return actions;
 }
+
+
 
 /*
 #pragma mark - Navigation

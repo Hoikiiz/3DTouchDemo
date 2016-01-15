@@ -68,14 +68,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - UIViewControllerPreviewingDelegate
 
+//返回弹出的预览控制器
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
     TouchViewController *vc = [[TouchViewController alloc] initWithTitle:@"1" color:[UIColor cyanColor]];
+//    决定弹出控制器的预览范围，x,y为0，0
     vc.preferredContentSize = CGSizeMake(100, 100);
     return vc;
 }
+//对弹出的控制器做一些处理，决定控制器的弹出形式
 - (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
-    [self showViewController:viewControllerToCommit sender:self];
+//    modally pop
+    [self presentViewController:viewControllerToCommit animated:YES completion:nil];
 }
 @end
